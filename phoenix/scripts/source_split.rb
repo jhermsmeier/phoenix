@@ -10,6 +10,7 @@ def splitfile(filename)
 	index = 0
 	file.each do |line|
 		filearray.push(line)
+		nline = line.gsub(':','')
 		if line.include? "@implementation"
 			startnum = index
 			declcomp = line.split " "
