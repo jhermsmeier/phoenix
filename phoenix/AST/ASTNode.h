@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+@class GenericType;
+
 @interface ASTNode: NSObject
 {
     GenericType *type;

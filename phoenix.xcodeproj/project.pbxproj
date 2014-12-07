@@ -40,6 +40,12 @@
 		143C34C51A34051C004DBA61 /* VariableDeclaration.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34A41A34051C004DBA61 /* VariableDeclaration.m */; };
 		143C34C61A34051C004DBA61 /* WhileStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34A61A34051C004DBA61 /* WhileStatement.m */; };
 		143C34C81A340D46004DBA61 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34C71A340D46004DBA61 /* Functions.m */; };
+		143C34D51A343DCA004DBA61 /* ArrayType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34CA1A343DCA004DBA61 /* ArrayType.m */; };
+		143C34D61A343DCA004DBA61 /* DictionaryType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34CC1A343DCA004DBA61 /* DictionaryType.m */; };
+		143C34D71A343DCA004DBA61 /* FunctionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34CE1A343DCA004DBA61 /* FunctionType.m */; };
+		143C34D81A343DCA004DBA61 /* GenericType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D01A343DCA004DBA61 /* GenericType.m */; };
+		143C34D91A343DCA004DBA61 /* IndirectionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D21A343DCA004DBA61 /* IndirectionType.m */; };
+		143C34DA1A343DCA004DBA61 /* TupleType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D41A343DCA004DBA61 /* TupleType.m */; };
 		1460D58A1A017757009D1EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5891A017757009D1EE9 /* main.m */; };
 		1460D59D1A01779D009D1EE9 /* grammar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5911A01779D009D1EE9 /* grammar.mm */; };
 		14C83C9A1A29809400A10D94 /* ASMCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C8A1A29809400A10D94 /* ASMCodeGenerator.m */; };
@@ -48,7 +54,6 @@
 		14C83C9D1A29809400A10D94 /* ObjCCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C901A29809400A10D94 /* ObjCCodeGenerator.m */; };
 		14C83C9E1A29809400A10D94 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C931A29809400A10D94 /* Lexer.m */; };
 		14C83C9F1A29809400A10D94 /* Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C951A29809400A10D94 /* Regex.m */; };
-		14C83CA01A29809400A10D94 /* Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C981A29809400A10D94 /* Types.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,6 +134,18 @@
 		143C34A51A34051C004DBA61 /* WhileStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhileStatement.h; sourceTree = "<group>"; };
 		143C34A61A34051C004DBA61 /* WhileStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhileStatement.m; sourceTree = "<group>"; };
 		143C34C71A340D46004DBA61 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
+		143C34C91A343DCA004DBA61 /* ArrayType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayType.h; sourceTree = "<group>"; };
+		143C34CA1A343DCA004DBA61 /* ArrayType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayType.m; sourceTree = "<group>"; };
+		143C34CB1A343DCA004DBA61 /* DictionaryType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryType.h; sourceTree = "<group>"; };
+		143C34CC1A343DCA004DBA61 /* DictionaryType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryType.m; sourceTree = "<group>"; };
+		143C34CD1A343DCA004DBA61 /* FunctionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionType.h; sourceTree = "<group>"; };
+		143C34CE1A343DCA004DBA61 /* FunctionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionType.m; sourceTree = "<group>"; };
+		143C34CF1A343DCA004DBA61 /* GenericType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericType.h; sourceTree = "<group>"; };
+		143C34D01A343DCA004DBA61 /* GenericType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericType.m; sourceTree = "<group>"; };
+		143C34D11A343DCA004DBA61 /* IndirectionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndirectionType.h; sourceTree = "<group>"; };
+		143C34D21A343DCA004DBA61 /* IndirectionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndirectionType.m; sourceTree = "<group>"; };
+		143C34D31A343DCA004DBA61 /* TupleType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TupleType.h; sourceTree = "<group>"; };
+		143C34D41A343DCA004DBA61 /* TupleType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TupleType.m; sourceTree = "<group>"; };
 		1460D5861A017757009D1EE9 /* phoenix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = phoenix; sourceTree = BUILT_PRODUCTS_DIR; };
 		1460D5891A017757009D1EE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1460D5901A01779D009D1EE9 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
@@ -151,7 +168,6 @@
 		14C83C941A29809400A10D94 /* Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regex.h; sourceTree = "<group>"; };
 		14C83C951A29809400A10D94 /* Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Regex.m; sourceTree = "<group>"; };
 		14C83C971A29809400A10D94 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
-		14C83C981A29809400A10D94 /* Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Types.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,8 +341,19 @@
 		14C83C961A29809400A10D94 /* Types */ = {
 			isa = PBXGroup;
 			children = (
+				143C34C91A343DCA004DBA61 /* ArrayType.h */,
+				143C34CA1A343DCA004DBA61 /* ArrayType.m */,
+				143C34CB1A343DCA004DBA61 /* DictionaryType.h */,
+				143C34CC1A343DCA004DBA61 /* DictionaryType.m */,
+				143C34CD1A343DCA004DBA61 /* FunctionType.h */,
+				143C34CE1A343DCA004DBA61 /* FunctionType.m */,
+				143C34CF1A343DCA004DBA61 /* GenericType.h */,
+				143C34D01A343DCA004DBA61 /* GenericType.m */,
+				143C34D11A343DCA004DBA61 /* IndirectionType.h */,
+				143C34D21A343DCA004DBA61 /* IndirectionType.m */,
+				143C34D31A343DCA004DBA61 /* TupleType.h */,
+				143C34D41A343DCA004DBA61 /* TupleType.m */,
 				14C83C971A29809400A10D94 /* Types.h */,
-				14C83C981A29809400A10D94 /* Types.m */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -390,6 +417,8 @@
 				143C34BF1A34051C004DBA61 /* PrefixOperator.m in Sources */,
 				143C34B71A34051C004DBA61 /* ImportStatement.m in Sources */,
 				143C34AB1A34051C004DBA61 /* BinaryExpression.m in Sources */,
+				143C34D61A343DCA004DBA61 /* DictionaryType.m in Sources */,
+				143C34D71A343DCA004DBA61 /* FunctionType.m in Sources */,
 				143C34C21A34051C004DBA61 /* StatementsNode.m in Sources */,
 				14C83C9D1A29809400A10D94 /* ObjCCodeGenerator.m in Sources */,
 				143C34A91A34051C004DBA61 /* ASTContext.m in Sources */,
@@ -398,13 +427,14 @@
 				143C34AA1A34051C004DBA61 /* ASTNode.m in Sources */,
 				143C34BE1A34051C004DBA61 /* PostfixOperator.m in Sources */,
 				143C34B41A34051C004DBA61 /* FunctionParameter.m in Sources */,
-				14C83CA01A29809400A10D94 /* Types.m in Sources */,
+				143C34D91A343DCA004DBA61 /* IndirectionType.m in Sources */,
 				143C34B51A34051C004DBA61 /* IdentifierExpression.m in Sources */,
 				14C83C9A1A29809400A10D94 /* ASMCodeGenerator.m in Sources */,
 				143C34C01A34051C004DBA61 /* ReturnStatement.m in Sources */,
 				143C34C61A34051C004DBA61 /* WhileStatement.m in Sources */,
 				14C83C9E1A29809400A10D94 /* Lexer.m in Sources */,
 				143C34A81A34051C004DBA61 /* AssignmentOperator.m in Sources */,
+				143C34D51A343DCA004DBA61 /* ArrayType.m in Sources */,
 				14C83C9F1A29809400A10D94 /* Regex.m in Sources */,
 				143C34B61A34051C004DBA61 /* IfStatement.m in Sources */,
 				143C34BD1A34051C004DBA61 /* ParenthesizedExpression.m in Sources */,
@@ -415,7 +445,9 @@
 				143C34B01A34051C004DBA61 /* DictionaryLiteral.m in Sources */,
 				143C34BC1A34051C004DBA61 /* OptionalChainExprStatement.m in Sources */,
 				143C34C81A340D46004DBA61 /* Functions.m in Sources */,
+				143C34D81A343DCA004DBA61 /* GenericType.m in Sources */,
 				143C34C11A34051C004DBA61 /* StatementNode.m in Sources */,
+				143C34DA1A343DCA004DBA61 /* TupleType.m in Sources */,
 				1460D58A1A017757009D1EE9 /* main.m in Sources */,
 				143C34BB1A34051C004DBA61 /* NSString+Extension.m in Sources */,
 				143C34B21A34051C004DBA61 /* FunctionCallExpression.m in Sources */,

@@ -20,13 +20,13 @@
 
 - (NSString *)toCode
 {
-    NSString *result = [NSString stringWithFormat:@"function %@ (", self.name]; // "function " + self.name + "(";
+    NSString *result = [NSString stringWithFormat:@"%@ (", self.name];
     ASTNode *parameters = self.signature;
     if (parameters)
     {
-        [result stringByAppendingString:[parameters toCode]];
+        result = [result stringByAppendingString:[parameters toCode]];
     }
-    [result stringByAppendingString:@") {\n"];
+    result = [result stringByAppendingString:@") {\n"];
 
     ASTNode *statements = self.body;
     if(statements)

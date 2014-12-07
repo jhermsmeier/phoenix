@@ -10,9 +10,10 @@ def splitfile(filename)
 	index = 0
 	file.each do |line|
 		filearray.push(line)
-		if line.include? "@interface"
+		nline = line.gsub(':','')
+		if nline.include? "@interface"
 			startnum = index
-			declcomp = line.split " "
+			declcomp = nline.split " "
 			classname = declcomp[1]
 		elsif line.include? "@end"
 			endnum = index

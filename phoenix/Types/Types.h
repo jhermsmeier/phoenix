@@ -21,54 +21,9 @@ enum {
 };
 typedef NSUInteger SwiftType;
 
-// GenericType...
-@interface GenericType : NSObject
-@property (nonatomic,assign) SwiftType type;
-@property (nonatomic,assign) BOOL optional;
-- (id)initWithType: (SwiftType)type;
-- (GenericType *) operate: (NSString *)op
-                         : (GenericType *)other;
-- (NSString *) customBinaryOperator: (ASTNode *)myNode
-                                   : (NSString *)op
-                                   : (ASTNode *)otherNode;
-+ (GenericType *) fromTypeIdentifier: (NSString *)name;
-@end
-
-// IndirectionType...
-@interface IndirectionType : GenericType
-@property (nonatomic, retain) GenericType *pointer;
-- (id) initWithPointer: (GenericType *)pointer;
-- (void) update: (GenericType *)pointer;
-@end
-
-// TupleType...
-@interface TupleType: GenericType
-@property (nonatomic, retain) NSMutableArray *names;
-@property (nonatomic, retain) NSMutableArray *types;
-- (id) initWithList: (ASTNode *)list;
-- (void) addType: (NSString *)name
-                : (GenericType *)type;
-- (GenericType *) getTypeForIndex:(int)index;
-@end
-
-// ArrayType...
-@interface ArrayType: GenericType
-@property (nonatomic, retain) GenericType *innerType;
-- (id) initWithInnerType: (GenericType *)innerType;
-@end
-
-// DictionaryType...
-@interface DictionaryType: GenericType
-@property (nonatomic, retain) GenericType *innerType;
-- (id) initWithInnerType: (GenericType *)innerType;
-@end
-
-// FunctionType...
-@interface FunctionType: GenericType
-@property (nonatomic, retain) GenericType *returnType;
-@property (nonatomic, retain) NSMutableArray *argumentTypes;
-- (id) initWithArgumentTypes: (NSMutableArray *)argumentTypes
-                  returnType: (GenericType *)returnType;
-- (id) initWithArgsType:(GenericType *)argsType
-             returnType:(GenericType *)returnType;
-@end
+#import "ArrayType.h"
+#import "DictionaryType.h"
+#import "FunctionType.h"
+#import "GenericType.h"
+#import "IndirectionType.h"
+#import "TupleType.h"
