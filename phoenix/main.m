@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Lexer.h"
 #import "AST.h"
-// #import "bridge.h"
+#import "bridge.h"
 
 // ASTNode* bridge_yyparse(Lexer * lexer, int debug);
 // const char * bridge_yyerror();
@@ -34,9 +34,16 @@ NSDictionary *swiftCompiler(NSString *sourceCode, BOOL debug)
     if(ast != nil)
     {
         NSString *program = [ast toCode];
-        NSString *error = [NSString stringWithUTF8String:bridge_yyerror()];
+        NSString *error = nil;
+        const char *errstr = bridge_yyerror();
+
+        if(errstr != NULL)
+        {
+            error = [NSString stringWithUTF8String:errstr];
+            [result setObject:error forKey:@"error"];
+        }
+        
         [result setObject:program forKey:@"program"];
-        [result setObject:error forKey:@"error"];
     }
     
     return result;

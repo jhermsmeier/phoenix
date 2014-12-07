@@ -6535,15 +6535,15 @@ int yylex ()
     
     //set string value
     const char * str = [[lexer yylexstr] UTF8String];
-    NSLog(@"input --");
+    // NSLog(@"input --");
     if (str) {
         yylval.str = strdup(str);
     }
     else {
         yylval.str = NULL;
     }
-    NSLog(@"String: %s",str);
-    NSLog(@"-- input");
+    // NSLog(@"String: %s",str);
+    // NSLog(@"-- input");
     return token;
 }
 
@@ -6554,7 +6554,7 @@ extern "C" {
         debugRules = debug;
         yyparse();
         NSLog(@"End parsing...");
-        NSLog(@" %@", [ast toCode]);
+        //NSLog(@" %@", [ast toCode]);
         return ast;
     }
     

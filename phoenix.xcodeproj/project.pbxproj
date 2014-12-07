@@ -46,8 +46,9 @@
 		143C34D81A343DCA004DBA61 /* GenericType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D01A343DCA004DBA61 /* GenericType.m */; };
 		143C34D91A343DCA004DBA61 /* IndirectionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D21A343DCA004DBA61 /* IndirectionType.m */; };
 		143C34DA1A343DCA004DBA61 /* TupleType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D41A343DCA004DBA61 /* TupleType.m */; };
+		143C34E11A34C552004DBA61 /* GRAMMAR.md in Sources */ = {isa = PBXBuildFile; fileRef = 143C34DD1A34C552004DBA61 /* GRAMMAR.md */; };
+		143C34E21A34C552004DBA61 /* grammar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 143C34DE1A34C552004DBA61 /* grammar.mm */; };
 		1460D58A1A017757009D1EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5891A017757009D1EE9 /* main.m */; };
-		1460D59D1A01779D009D1EE9 /* grammar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5911A01779D009D1EE9 /* grammar.mm */; };
 		14C83C9A1A29809400A10D94 /* ASMCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C8A1A29809400A10D94 /* ASMCodeGenerator.m */; };
 		14C83C9B1A29809400A10D94 /* CodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C8C1A29809400A10D94 /* CodeGenerator.m */; };
 		14C83C9C1A29809400A10D94 /* LLVMCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C8E1A29809400A10D94 /* LLVMCodeGenerator.m */; };
@@ -146,14 +147,15 @@
 		143C34D21A343DCA004DBA61 /* IndirectionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndirectionType.m; sourceTree = "<group>"; };
 		143C34D31A343DCA004DBA61 /* TupleType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TupleType.h; sourceTree = "<group>"; };
 		143C34D41A343DCA004DBA61 /* TupleType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TupleType.m; sourceTree = "<group>"; };
+		143C34DC1A34C552004DBA61 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		143C34DD1A34C552004DBA61 /* GRAMMAR.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GRAMMAR.md; sourceTree = "<group>"; };
+		143C34DE1A34C552004DBA61 /* grammar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = grammar.mm; sourceTree = "<group>"; };
+		143C34DF1A34C552004DBA61 /* grammar.y */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; path = grammar.y; sourceTree = "<group>"; };
+		143C34E01A34C552004DBA61 /* swift.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swift.grammar; sourceTree = "<group>"; };
 		1460D5861A017757009D1EE9 /* phoenix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = phoenix; sourceTree = BUILT_PRODUCTS_DIR; };
 		1460D5891A017757009D1EE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1460D5901A01779D009D1EE9 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
-		1460D5911A01779D009D1EE9 /* grammar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = grammar.mm; sourceTree = "<group>"; };
 		1460D5951A01779D009D1EE9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		1460D59A1A01779D009D1EE9 /* swift.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swift.grammar; sourceTree = "<group>"; };
-		1460D5B61A017A63009D1EE9 /* GRAMMAR.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GRAMMAR.md; sourceTree = "<group>"; };
-		1468F3EA1A0DEC57006C9CAE /* grammar.y */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.yacc; path = grammar.y; sourceTree = "<group>"; };
 		14C83C861A29809400A10D94 /* AST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AST.h; sourceTree = "<group>"; };
 		14C83C891A29809400A10D94 /* ASMCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMCodeGenerator.h; sourceTree = "<group>"; };
 		14C83C8A1A29809400A10D94 /* ASMCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMCodeGenerator.m; sourceTree = "<group>"; };
@@ -181,6 +183,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143C34DB1A34C552004DBA61 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				143C34DC1A34C552004DBA61 /* bridge.h */,
+				143C34DD1A34C552004DBA61 /* GRAMMAR.md */,
+				143C34DE1A34C552004DBA61 /* grammar.mm */,
+				143C34DF1A34C552004DBA61 /* grammar.y */,
+				143C34E01A34C552004DBA61 /* swift.grammar */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		1460D57D1A017757009D1EE9 = {
 			isa = PBXGroup;
 			children = (
@@ -200,23 +214,13 @@
 		1460D5881A017757009D1EE9 /* phoenix */ = {
 			isa = PBXGroup;
 			children = (
+				143C34DB1A34C552004DBA61 /* Parser */,
 				1460D5A61A017802009D1EE9 /* Supporting Files */,
 				1460D5A51A0177F0009D1EE9 /* Classes */,
-				1460D5A41A0177DA009D1EE9 /* Grammar */,
 				1460D5901A01779D009D1EE9 /* bridge.h */,
 				1460D5891A017757009D1EE9 /* main.m */,
 			);
 			path = phoenix;
-			sourceTree = "<group>";
-		};
-		1460D5A41A0177DA009D1EE9 /* Grammar */ = {
-			isa = PBXGroup;
-			children = (
-				1468F3EA1A0DEC57006C9CAE /* grammar.y */,
-				1460D5911A01779D009D1EE9 /* grammar.mm */,
-				1460D5B61A017A63009D1EE9 /* GRAMMAR.md */,
-			);
-			name = Grammar;
 			sourceTree = "<group>";
 		};
 		1460D5A51A0177F0009D1EE9 /* Classes */ = {
@@ -233,7 +237,6 @@
 		1460D5A61A017802009D1EE9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1460D59A1A01779D009D1EE9 /* swift.grammar */,
 				1460D5951A01779D009D1EE9 /* LICENSE */,
 			);
 			name = "Supporting Files";
@@ -439,9 +442,11 @@
 				143C34B61A34051C004DBA61 /* IfStatement.m in Sources */,
 				143C34BD1A34051C004DBA61 /* ParenthesizedExpression.m in Sources */,
 				14C83C9B1A29809400A10D94 /* CodeGenerator.m in Sources */,
+				143C34E21A34C552004DBA61 /* grammar.mm in Sources */,
 				143C34C41A34051C004DBA61 /* TypeExpression.m in Sources */,
 				143C34B31A34051C004DBA61 /* FunctionDeclaration.m in Sources */,
 				143C34AE1A34051C004DBA61 /* DeclarationStatement.m in Sources */,
+				143C34E11A34C552004DBA61 /* GRAMMAR.md in Sources */,
 				143C34B01A34051C004DBA61 /* DictionaryLiteral.m in Sources */,
 				143C34BC1A34051C004DBA61 /* OptionalChainExprStatement.m in Sources */,
 				143C34C81A340D46004DBA61 /* Functions.m in Sources */,
@@ -453,7 +458,6 @@
 				143C34B21A34051C004DBA61 /* FunctionCallExpression.m in Sources */,
 				143C34AC1A34051C004DBA61 /* BinaryOperator.m in Sources */,
 				143C34B11A34051C004DBA61 /* ExpressionList.m in Sources */,
-				1460D59D1A01779D009D1EE9 /* grammar.mm in Sources */,
 				143C34BA1A34051C004DBA61 /* NamedExpression.m in Sources */,
 				143C34B81A34051C004DBA61 /* LabelStatement.m in Sources */,
 				14C83C9C1A29809400A10D94 /* LLVMCodeGenerator.m in Sources */,
