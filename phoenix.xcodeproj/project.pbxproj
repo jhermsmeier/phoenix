@@ -46,7 +46,6 @@
 		143C34D81A343DCA004DBA61 /* GenericType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D01A343DCA004DBA61 /* GenericType.m */; };
 		143C34D91A343DCA004DBA61 /* IndirectionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D21A343DCA004DBA61 /* IndirectionType.m */; };
 		143C34DA1A343DCA004DBA61 /* TupleType.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C34D41A343DCA004DBA61 /* TupleType.m */; };
-		143C34E11A34C552004DBA61 /* GRAMMAR.md in Sources */ = {isa = PBXBuildFile; fileRef = 143C34DD1A34C552004DBA61 /* GRAMMAR.md */; };
 		143C34E21A34C552004DBA61 /* grammar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 143C34DE1A34C552004DBA61 /* grammar.mm */; };
 		1460D58A1A017757009D1EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5891A017757009D1EE9 /* main.m */; };
 		14C83C9A1A29809400A10D94 /* ASMCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C8A1A29809400A10D94 /* ASMCodeGenerator.m */; };
@@ -446,7 +445,6 @@
 				143C34C41A34051C004DBA61 /* TypeExpression.m in Sources */,
 				143C34B31A34051C004DBA61 /* FunctionDeclaration.m in Sources */,
 				143C34AE1A34051C004DBA61 /* DeclarationStatement.m in Sources */,
-				143C34E11A34C552004DBA61 /* GRAMMAR.md in Sources */,
 				143C34B01A34051C004DBA61 /* DictionaryLiteral.m in Sources */,
 				143C34BC1A34051C004DBA61 /* OptionalChainExprStatement.m in Sources */,
 				143C34C81A340D46004DBA61 /* Functions.m in Sources */,

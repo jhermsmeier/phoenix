@@ -4996,11 +4996,12 @@ yygetLRActions (yyStateNum yystate, int yytoken,
       *yyaction = yytable[yyindex];
       *yyconflicts = yyconfl + yyconflp[yyindex];
     }
+    /* DISABLE CODE TO ELIMINATE WARNING ABOUT NON-EXECUTION...
   else
     {
       *yyaction = 0;
       *yyconflicts = yyconfl + yyconflp[yyindex];
-    }
+    }*/
 }
 
 static inline yyStateNum
