@@ -16,11 +16,6 @@
     return self;
 }
 
-- (NSString *)toCode
-{
-    return [self.expr toCode];
-}
-
 - (GenericType *)inferType
 {
     return [self.expr getType];

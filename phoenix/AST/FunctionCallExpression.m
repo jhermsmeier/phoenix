@@ -16,13 +16,6 @@
     return self;
 }
 
-
-- (NSString *)toCode
-{
-    self.parenthesized.allowInlineTuple = NO;
-    return [NSString stringWithFormat:@"%@%@",[self.function toCode],[self.parenthesized toCode]];
-}
-
 - (GenericType *)inferType
 {
     FunctionType *funcType = (FunctionType *)(AS([self.function getType], [FunctionType class]));

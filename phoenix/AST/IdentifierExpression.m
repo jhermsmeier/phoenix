@@ -14,11 +14,6 @@
     return self;
 }
 
-- (NSString *) toCode
-{
-    return self.name;
-}
-
 - (GenericType *) inferType
 {
     return [ctx inferSymbol:self.name];

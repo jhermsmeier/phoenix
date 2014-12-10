@@ -21,24 +21,6 @@
     return [NSString stringWithFormat:@"[%ld]",index];
 }
 
-- (NSString *) toCode
-{
-    if([self.binaryOperator isEqualToString:@"."])
-    {
-        NSString *right = [self.rightOperand toCode];
-        NSInteger index = [right integerValue];
-        if(!isnan(index))
-        {
-            return [self codeForIndex:index];
-        }
-        return [NSString stringWithFormat: @"%@%@",self.binaryOperator, right];
-    }
-    
-    // else...
-    return [NSString stringWithFormat: @" %@ %@",self.binaryOperator,
-            [self.rightOperand toCode]];
-}
-
 - (GenericType *) inferType
 {
     return [self.rightOperand getType];

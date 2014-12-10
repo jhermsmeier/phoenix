@@ -14,16 +14,6 @@
     return self;
 }
 
-- (NSString *)toCode
-{
-    ASTNode *expr = self.returnExpr;
-    if (expr)
-    {
-        return [NSString stringWithFormat:@"return %@;", [expr toCode]];
-    }
-    return @"return;";
-}
-
 - (GenericType *)inferType
 {
     ASTNode *expr = self.returnExpr;

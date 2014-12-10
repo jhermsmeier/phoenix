@@ -14,11 +14,6 @@
     return self;
 }
 
-- (NSString *) toCode
-{
-    return self.value;
-}
-
 - (GenericType *) inferType
 {
     if ([self.value isEqualToString: @"true"] ||

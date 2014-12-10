@@ -1,5 +1,7 @@
 #import "ASTNode.h"
 
+@class ParenthesizedExpression;
+
 @interface FunctionCallExpression : ASTNode
 
 @property (nonatomic, retain) ASTNode *function;

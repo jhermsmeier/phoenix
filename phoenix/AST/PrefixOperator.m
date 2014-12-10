@@ -16,11 +16,6 @@
     return self;
 }
 
-- (NSString *) toCode
-{
-    return [NSString stringWithFormat:@"%@%@",self.prefixOperator, [self.operand toCode]];
-}
-
 - (GenericType *) inferType
 {
     return [self.operand getType];

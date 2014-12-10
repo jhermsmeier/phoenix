@@ -13,13 +13,6 @@
     return self;
 }
 
-- (NSString *) toCode
-{
-    return [NSString stringWithFormat:@" ? %@ : %@",
-            [self.trueOperand toCode],
-            [self.falseOperand toCode]];
-}
-
 - (GenericType *) inferType
 {
     return [self.trueOperand getType];

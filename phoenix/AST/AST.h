@@ -42,14 +42,10 @@
 #import "VariableDeclaration.h"
 #import "WhileStatement.h"
 #import <math.h>
+#import "Functions.h"
 
-// Global context....
-static ASTContext *ctx = nil;  // Initialized top ASTContext when first context is created...
 
-#define AS(X,Y) ([X class] == Y)?X:nil
-#define ASTSymbolTable NSMutableDictionary
 
-NSString *tabulate(NSString *code);
 
 
 

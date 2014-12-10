@@ -6,8 +6,10 @@
 
 #import <Foundation/Foundation.h>
 
+/*
 @class ASTNode;
 @class ExpressionList;
+*/
 
 enum {
     TYPE_STRING = 1,

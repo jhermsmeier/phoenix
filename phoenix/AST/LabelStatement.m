@@ -16,10 +16,4 @@
     return self;
 }
 
-- (NSString *)toCode
-{
-    return [NSString stringWithFormat:@"%@:\n%@",self.labelName,
-            [self.loop toCode]];
-}
-
 @end

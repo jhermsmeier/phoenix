@@ -1,8 +1,10 @@
 #import <Foundation/Foundation.h>
-#import "GenericType.h"
-#import "ASTNode.h"
+#import "Types.h"
+
+@class ASTNode;
 
 @interface GenericType : NSObject
+
 @property (nonatomic,assign) SwiftType type;
 @property (nonatomic,assign) BOOL optional;
 - (id)initWithType: (SwiftType)type;

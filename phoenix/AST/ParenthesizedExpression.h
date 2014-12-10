@@ -1,6 +1,9 @@
 #import "ASTNode.h"
 
+@class ExpressionList;
+
 @interface ParenthesizedExpression : ASTNode
+
 @property (nonatomic,retain) ASTNode *expression;
 @property (nonatomic,assign) BOOL allowInlineTuple;
 - (id) initWithExpression: (ASTNode *)expression;

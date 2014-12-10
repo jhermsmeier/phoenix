@@ -24,9 +24,4 @@
     return self;
 }
 
-- (NSString *)toCode
-{
-    return self.local ? self.local : self.external;
-}
-
 @end

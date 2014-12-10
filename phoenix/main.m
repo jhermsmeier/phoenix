@@ -54,6 +54,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         BOOL debug = NO;
+        [ASTNode setPrefix:@"ObjC"];
         
         /*
         if(argc <= 1)
@@ -63,19 +64,23 @@ int main(int argc, const char * argv[]) {
         }
          */
         ctx = [[ASTContext alloc] init];
-        NSString *fileName = @"/tmp/test1.swift";
+        NSString *fileName = @"/tmp/webkit.swift";
+        fileName = @"/tmp/hello.swift";
         // NSString *fileName = [NSString stringWithUTF8String:argv[1]];
         NSString *sourceCode = [NSString stringWithContentsOfFile:fileName
                                                          encoding:NSUTF8StringEncoding
                                                             error:NULL];
+        
+        NSString *imports = @"import Foundation\nimport AppKit\n";
+        sourceCode = [imports stringByAppendingString:sourceCode];
         
         NSDictionary *result = swiftCompiler(sourceCode, debug);
         
         NSString *outputCode = [result objectForKey:@"program"];
         NSString *error = [result objectForKey:@"error"];
         
-        NSLog(@"Code Output: %@",outputCode);
-        NSLog(@"Errors: %@",error);
+        NSLog(@"Code Output:\n===\n%@",outputCode);
+        NSLog(@"Errors:\n===\n%@",error);
 
     }
     return 0;

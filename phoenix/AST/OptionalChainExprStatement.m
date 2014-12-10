@@ -14,14 +14,4 @@
     return self;
 }
 
-- (NSString *)toCode
-{
-    ASTNode *expr = self.optChainExpr;
-    if(expr)
-    {
-        return [expr toCode];
-    }
-    return @"";
-}
-
 @end

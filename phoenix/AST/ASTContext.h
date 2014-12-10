@@ -29,3 +29,6 @@
 - (GenericType *)inferSymbol: (NSString *)name;
 
 @end
+
+// Global context....
+static ASTContext *ctx = nil;  // Initialized top ASTContext when first context is created...

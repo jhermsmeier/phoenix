@@ -14,11 +14,6 @@
     return self;
 }
 
-- (NSString *)toCode
-{
-    return @"";
-}
-
 - (GenericType *)inferType
 {
     return self.linkedType;

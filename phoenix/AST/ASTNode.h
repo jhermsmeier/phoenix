@@ -1,6 +1,8 @@
 #import <Foundation/Foundation.h>
+#import "Types.h"
 
-@class GenericType;
+#define AS(X,Y) ([[X class] isKindOfClass: Y])?X:nil
+#define ASTSymbolTable NSMutableDictionary
 
 @interface ASTNode: NSObject
 {
@@ -8,6 +10,9 @@
 }
 
 @property (nonatomic, retain) GenericType *type;
+
++ (NSString *)prefix;
++ (void)setPrefix:(NSString *)string;
 
 - (NSString *)toCode;
 - (GenericType *) getType;

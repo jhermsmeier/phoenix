@@ -14,18 +14,6 @@
     return self;
 }
 
-- (NSString *)toCode
-{
-    NSString *result = @"[";
-    ASTNode *data = self.items;
-    if(data != nil)
-    {
-        result = [result stringByAppendingString:[data toCode]];
-    }
-    result = [result stringByAppendingString:@"]"];
-    return result;
-}
-
 - (GenericType *)inferType
 {
     ExpressionList *node = (ExpressionList *)(AS(self.items,

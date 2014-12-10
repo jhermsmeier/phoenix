@@ -15,13 +15,6 @@
     return self;
 }
 
-- (NSString *)toCode
-{
-    return [[[@"\n" stringByAppendingString: [self.key toCode]]
-             stringByAppendingString:@" : "]
-            stringByAppendingString:[self.value toCode]];
-}
-
 - (GenericType *)inferType
 {
     return [self.value getType];

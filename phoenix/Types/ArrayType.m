@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "Types.h"
+#import "ASTNode.h"
 
 @implementation ArrayType
 
