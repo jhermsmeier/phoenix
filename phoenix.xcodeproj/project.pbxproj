@@ -77,10 +77,6 @@
 		143C35461A38A52F004DBA61 /* ObjCVariableDeclaration.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C35271A38A52F004DBA61 /* ObjCVariableDeclaration.m */; };
 		143C35471A38A52F004DBA61 /* ObjCWhileStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C35291A38A52F004DBA61 /* ObjCWhileStatement.m */; };
 		1460D58A1A017757009D1EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5891A017757009D1EE9 /* main.m */; };
-		14C83C9A1A29809400A10D94 /* ASMCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C8A1A29809400A10D94 /* ASMCodeGenerator.m */; };
-		14C83C9B1A29809400A10D94 /* CodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C8C1A29809400A10D94 /* CodeGenerator.m */; };
-		14C83C9C1A29809400A10D94 /* LLVMCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C8E1A29809400A10D94 /* LLVMCodeGenerator.m */; };
-		14C83C9D1A29809400A10D94 /* ObjCCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C901A29809400A10D94 /* ObjCCodeGenerator.m */; };
 		14C83C9E1A29809400A10D94 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C931A29809400A10D94 /* Lexer.m */; };
 		14C83C9F1A29809400A10D94 /* Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C951A29809400A10D94 /* Regex.m */; };
 /* End PBXBuildFile section */
@@ -243,14 +239,6 @@
 		1460D5891A017757009D1EE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1460D5951A01779D009D1EE9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		14C83C861A29809400A10D94 /* AST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AST.h; sourceTree = "<group>"; };
-		14C83C891A29809400A10D94 /* ASMCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMCodeGenerator.h; sourceTree = "<group>"; };
-		14C83C8A1A29809400A10D94 /* ASMCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMCodeGenerator.m; sourceTree = "<group>"; };
-		14C83C8B1A29809400A10D94 /* CodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeGenerator.h; sourceTree = "<group>"; };
-		14C83C8C1A29809400A10D94 /* CodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeGenerator.m; sourceTree = "<group>"; };
-		14C83C8D1A29809400A10D94 /* LLVMCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLVMCodeGenerator.h; sourceTree = "<group>"; };
-		14C83C8E1A29809400A10D94 /* LLVMCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLVMCodeGenerator.m; sourceTree = "<group>"; };
-		14C83C8F1A29809400A10D94 /* ObjCCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCCodeGenerator.h; sourceTree = "<group>"; };
-		14C83C901A29809400A10D94 /* ObjCCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCCodeGenerator.m; sourceTree = "<group>"; };
 		14C83C921A29809400A10D94 /* Lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexer.h; sourceTree = "<group>"; };
 		14C83C931A29809400A10D94 /* Lexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lexer.m; sourceTree = "<group>"; };
 		14C83C941A29809400A10D94 /* Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regex.h; sourceTree = "<group>"; };
@@ -478,14 +466,6 @@
 			isa = PBXGroup;
 			children = (
 				143C34ED1A38A52F004DBA61 /* ObjC */,
-				14C83C891A29809400A10D94 /* ASMCodeGenerator.h */,
-				14C83C8A1A29809400A10D94 /* ASMCodeGenerator.m */,
-				14C83C8B1A29809400A10D94 /* CodeGenerator.h */,
-				14C83C8C1A29809400A10D94 /* CodeGenerator.m */,
-				14C83C8D1A29809400A10D94 /* LLVMCodeGenerator.h */,
-				14C83C8E1A29809400A10D94 /* LLVMCodeGenerator.m */,
-				14C83C8F1A29809400A10D94 /* ObjCCodeGenerator.h */,
-				14C83C901A29809400A10D94 /* ObjCCodeGenerator.m */,
 			);
 			path = CodeGenerator;
 			sourceTree = "<group>";
@@ -586,7 +566,6 @@
 				143C34D71A343DCA004DBA61 /* FunctionType.m in Sources */,
 				143C35421A38A52F004DBA61 /* ObjCStatementNode.m in Sources */,
 				143C34C21A34051C004DBA61 /* StatementsNode.m in Sources */,
-				14C83C9D1A29809400A10D94 /* ObjCCodeGenerator.m in Sources */,
 				143C34EC1A3852E6004DBA61 /* NSString+Extension.m in Sources */,
 				143C353B1A38A52F004DBA61 /* ObjCLiteralExpression.m in Sources */,
 				143C35451A38A52F004DBA61 /* ObjCTypeExpression.m in Sources */,
@@ -605,7 +584,6 @@
 				143C352E1A38A52F004DBA61 /* ObjCBreakStatement.m in Sources */,
 				143C34D91A343DCA004DBA61 /* IndirectionType.m in Sources */,
 				143C34B51A34051C004DBA61 /* IdentifierExpression.m in Sources */,
-				14C83C9A1A29809400A10D94 /* ASMCodeGenerator.m in Sources */,
 				143C34C01A34051C004DBA61 /* ReturnStatement.m in Sources */,
 				143C34C61A34051C004DBA61 /* WhileStatement.m in Sources */,
 				14C83C9E1A29809400A10D94 /* Lexer.m in Sources */,
@@ -615,7 +593,6 @@
 				14C83C9F1A29809400A10D94 /* Regex.m in Sources */,
 				143C34B61A34051C004DBA61 /* IfStatement.m in Sources */,
 				143C34BD1A34051C004DBA61 /* ParenthesizedExpression.m in Sources */,
-				14C83C9B1A29809400A10D94 /* CodeGenerator.m in Sources */,
 				143C34E21A34C552004DBA61 /* grammar.mm in Sources */,
 				143C352D1A38A52F004DBA61 /* ObjCBinaryOperator.m in Sources */,
 				143C35341A38A52F004DBA61 /* ObjCFunctionDeclaration.m in Sources */,
@@ -648,7 +625,6 @@
 				143C35381A38A52F004DBA61 /* ObjCIfStatement.m in Sources */,
 				143C35351A38A52F004DBA61 /* ObjCFunctionParameter.m in Sources */,
 				143C34B81A34051C004DBA61 /* LabelStatement.m in Sources */,
-				14C83C9C1A29809400A10D94 /* LLVMCodeGenerator.m in Sources */,
 				143C34C51A34051C004DBA61 /* VariableDeclaration.m in Sources */,
 				143C34C31A34051C004DBA61 /* TernaryOperator.m in Sources */,
 				143C34A71A34051C004DBA61 /* ArrayLiteral.m in Sources */,

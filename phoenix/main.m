@@ -14,7 +14,7 @@
 // ASTNode* bridge_yyparse(Lexer * lexer, int debug);
 // const char * bridge_yyerror();
 
-NSDictionary *swiftCompiler(NSString *sourceCode, BOOL debug)
+NSDictionary *SwiftCompiler(NSString *sourceCode, BOOL debug)
 {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     Lexer *lexer = [[Lexer alloc] initWithSourceCode:sourceCode];
@@ -74,7 +74,7 @@ int main(int argc, const char * argv[]) {
         NSString *imports = @"import Foundation\nimport AppKit\n";
         sourceCode = [imports stringByAppendingString:sourceCode];
         
-        NSDictionary *result = swiftCompiler(sourceCode, debug);
+        NSDictionary *result = SwiftCompiler(sourceCode, debug);
         
         NSString *outputCode = [result objectForKey:@"program"];
         NSString *error = [result objectForKey:@"error"];
