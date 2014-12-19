@@ -12,7 +12,7 @@
         self.expression = anexpression;
         self.allowInlineTuple = YES;
     }
-    return nil;
+    return self;
 }
 
 - (NSString *) toInlineTuple: (ExpressionList *) list
