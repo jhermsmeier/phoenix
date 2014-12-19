@@ -19,4 +19,8 @@
     }
 }
 
+- (NSString *)toCode {
+    return self.value;
+}
+
 @end
