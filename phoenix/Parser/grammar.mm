@@ -191,7 +191,7 @@
         return c ? [NSString stringWithUTF8String:c] : nil;
     }
     
-    static bool debugRules = false;
+    static bool debugRules = true;
     
     #define LOG(...) if (debugRules)printf(__VA_ARGS__);
     

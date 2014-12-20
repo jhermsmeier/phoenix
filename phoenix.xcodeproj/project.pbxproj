@@ -76,6 +76,8 @@
 		143C35451A38A52F004DBA61 /* ObjCTypeExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C35251A38A52F004DBA61 /* ObjCTypeExpression.m */; };
 		143C35461A38A52F004DBA61 /* ObjCVariableDeclaration.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C35271A38A52F004DBA61 /* ObjCVariableDeclaration.m */; };
 		143C35471A38A52F004DBA61 /* ObjCWhileStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C35291A38A52F004DBA61 /* ObjCWhileStatement.m */; };
+		143C354B1A390AA3004DBA61 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 143C354A1A390AA3004DBA61 /* README.md */; };
+		143C354E1A390AB2004DBA61 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 143C354D1A390AB2004DBA61 /* README.md */; };
 		1460D58A1A017757009D1EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5891A017757009D1EE9 /* main.m */; };
 		14C83C9E1A29809400A10D94 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C931A29809400A10D94 /* Lexer.m */; };
 		14C83C9F1A29809400A10D94 /* Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C951A29809400A10D94 /* Regex.m */; };
@@ -235,6 +237,8 @@
 		143C35281A38A52F004DBA61 /* ObjCWhileStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCWhileStatement.h; sourceTree = "<group>"; };
 		143C35291A38A52F004DBA61 /* ObjCWhileStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCWhileStatement.m; sourceTree = "<group>"; };
 		143C35481A38BA4D004DBA61 /* Functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
+		143C354A1A390AA3004DBA61 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		143C354D1A390AB2004DBA61 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1460D5861A017757009D1EE9 /* phoenix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = phoenix; sourceTree = BUILT_PRODUCTS_DIR; };
 		1460D5891A017757009D1EE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1460D5951A01779D009D1EE9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -341,6 +345,22 @@
 				143C35291A38A52F004DBA61 /* ObjCWhileStatement.m */,
 			);
 			path = ObjC;
+			sourceTree = "<group>";
+		};
+		143C35491A390AA3004DBA61 /* ASM */ = {
+			isa = PBXGroup;
+			children = (
+				143C354A1A390AA3004DBA61 /* README.md */,
+			);
+			path = ASM;
+			sourceTree = "<group>";
+		};
+		143C354C1A390AB2004DBA61 /* LLVM */ = {
+			isa = PBXGroup;
+			children = (
+				143C354D1A390AB2004DBA61 /* README.md */,
+			);
+			path = LLVM;
 			sourceTree = "<group>";
 		};
 		1460D57D1A017757009D1EE9 = {
@@ -465,6 +485,8 @@
 		14C83C881A29809400A10D94 /* CodeGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				143C354C1A390AB2004DBA61 /* LLVM */,
+				143C35491A390AA3004DBA61 /* ASM */,
 				143C34ED1A38A52F004DBA61 /* ObjC */,
 			);
 			path = CodeGenerator;
@@ -615,6 +637,7 @@
 				143C34B21A34051C004DBA61 /* FunctionCallExpression.m in Sources */,
 				143C34AC1A34051C004DBA61 /* BinaryOperator.m in Sources */,
 				143C352C1A38A52F004DBA61 /* ObjCBinaryExpression.m in Sources */,
+				143C354B1A390AA3004DBA61 /* README.md in Sources */,
 				143C35371A38A52F004DBA61 /* ObjCIdentifierExpression.m in Sources */,
 				143C35411A38A52F004DBA61 /* ObjCReturnStatement.m in Sources */,
 				143C35301A38A52F004DBA61 /* ObjCDictionaryItem.m in Sources */,
@@ -622,6 +645,7 @@
 				143C352A1A38A52F004DBA61 /* ObjCArrayLiteral.m in Sources */,
 				143C34B11A34051C004DBA61 /* ExpressionList.m in Sources */,
 				143C34BA1A34051C004DBA61 /* NamedExpression.m in Sources */,
+				143C354E1A390AB2004DBA61 /* README.md in Sources */,
 				143C35381A38A52F004DBA61 /* ObjCIfStatement.m in Sources */,
 				143C35351A38A52F004DBA61 /* ObjCFunctionParameter.m in Sources */,
 				143C34B81A34051C004DBA61 /* LabelStatement.m in Sources */,

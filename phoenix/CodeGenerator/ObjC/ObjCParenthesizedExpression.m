@@ -6,7 +6,6 @@
 
 - (NSString *)toCode
 {
-    
     if (self.allowInlineTuple)
     {
         ExpressionList *list = (ExpressionList *)(AS(self.expression, [ExpressionList class]));
