@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "AST.h"
+#import "ObjCASTTransform.h"
 
 @interface Compiler : NSObject
 {
     ASTNode *rootNode;
+    ASTNode *transformed;
+    ASTTransform *transform;
     NSString *sourceCode;
     NSString *errors;
     NSString *prefix;

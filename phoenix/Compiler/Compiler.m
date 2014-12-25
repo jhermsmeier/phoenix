@@ -62,7 +62,10 @@
     rootNode = (ASTNode *)bridge_yyparse(lexer, debug);
     if(rootNode != nil)
     {
-        NSString *program = [rootNode toCode];
+        transform = [ASTTransform createWithAST:rootNode
+                                      forPrefix:prefix];
+        transformed = [transform transform];
+        NSString *program = [transformed toCode];
         NSString *error = nil;
         const char *errstr = bridge_yyerror();
         

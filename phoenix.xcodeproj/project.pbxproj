@@ -79,6 +79,7 @@
 		1460D58A1A017757009D1EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5891A017757009D1EE9 /* main.m */; };
 		14BECB8C1A4C8DA000C0522A /* ObjCASTTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECB8B1A4C8DA000C0522A /* ObjCASTTransform.m */; };
 		14BECB901A4C8E0000C0522A /* Compiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECB8F1A4C8E0000C0522A /* Compiler.m */; };
+		14BECB931A4C9BD700C0522A /* ASTTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECB921A4C9BD700C0522A /* ASTTransform.m */; };
 		14C83C9E1A29809400A10D94 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C931A29809400A10D94 /* Lexer.m */; };
 		14C83C9F1A29809400A10D94 /* Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C951A29809400A10D94 /* Regex.m */; };
 /* End PBXBuildFile section */
@@ -246,6 +247,8 @@
 		14BECB8B1A4C8DA000C0522A /* ObjCASTTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCASTTransform.m; sourceTree = "<group>"; };
 		14BECB8E1A4C8E0000C0522A /* Compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compiler.h; sourceTree = "<group>"; };
 		14BECB8F1A4C8E0000C0522A /* Compiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compiler.m; sourceTree = "<group>"; };
+		14BECB911A4C9BD700C0522A /* ASTTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTransform.h; sourceTree = "<group>"; };
+		14BECB921A4C9BD700C0522A /* ASTTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTransform.m; sourceTree = "<group>"; };
 		14C83C861A29809400A10D94 /* AST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AST.h; sourceTree = "<group>"; };
 		14C83C921A29809400A10D94 /* Lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexer.h; sourceTree = "<group>"; };
 		14C83C931A29809400A10D94 /* Lexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lexer.m; sourceTree = "<group>"; };
@@ -420,6 +423,8 @@
 			isa = PBXGroup;
 			children = (
 				14BECB891A4C8DA000C0522A /* ObjC */,
+				14BECB911A4C9BD700C0522A /* ASTTransform.h */,
+				14BECB921A4C9BD700C0522A /* ASTTransform.m */,
 			);
 			path = Transform;
 			sourceTree = "<group>";
@@ -631,6 +636,7 @@
 				143C35441A38A52F004DBA61 /* ObjCTernaryOperator.m in Sources */,
 				143C353D1A38A52F004DBA61 /* ObjCOptionalChainExprStatement.m in Sources */,
 				143C34AA1A34051C004DBA61 /* ASTNode.m in Sources */,
+				14BECB931A4C9BD700C0522A /* ASTTransform.m in Sources */,
 				143C34BE1A34051C004DBA61 /* PostfixOperator.m in Sources */,
 				143C34B41A34051C004DBA61 /* FunctionParameter.m in Sources */,
 				143C352B1A38A52F004DBA61 /* ObjCAssignmentOperator.m in Sources */,

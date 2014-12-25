@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ASTTransform.h"
 
-@interface ObjCASTTransform : NSObject
+@interface ObjCASTTransform : ASTTransform
 
 @end
