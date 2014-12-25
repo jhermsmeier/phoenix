@@ -7,55 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Lexer.h"
-#import "AST.h"
-#import "bridge.h"
-
-// ASTNode* bridge_yyparse(Lexer * lexer, int debug);
-// const char * bridge_yyerror();
-
-NSDictionary *SwiftCompiler(NSString *sourceCode, BOOL debug)
-{
-    NSMutableDictionary *result = [NSMutableDictionary dictionary];
-    Lexer *lexer = [[Lexer alloc] initWithSourceCode:sourceCode];
-    if(debug)
-    {
-        NSLog(@"Lexer Tokens");
-        NSLog(@"============");
-        [lexer debugTokens];
-        NSLog(@"============\n");
-        
-
-        NSLog(@"AST Parser");
-        NSLog(@"===========");
-    }
-    
-    ASTNode *ast = (ASTNode *)bridge_yyparse(lexer, debug);
-    if(ast != nil)
-    {
-        NSString *program = [ast toCode];
-        NSString *error = nil;
-        const char *errstr = bridge_yyerror();
-
-        if(errstr != NULL)
-        {
-            error = [NSString stringWithUTF8String:errstr];
-            [result setObject:error forKey:@"error"];
-        }
-        
-        [result setObject:program forKey:@"program"];
-    }
-    
-    return result;
-}
-
+#import "Compiler.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        BOOL debug = NO;
-        [ASTNode setPrefix:@"ObjC"];
-        
         /*
         if(argc <= 1)
         {
@@ -64,9 +20,10 @@ int main(int argc, const char * argv[]) {
         }
          */
         ctx = [[ASTContext alloc] init];
-        NSString *fileName = @"/tmp/webkit.swift";
+        NSString *fileName = nil;
+        // fileName = @"/tmp/webkit.swift";
         fileName = @"/tmp/hello.swift";
-        // NSString *fileName = [NSString stringWithUTF8String:argv[1]];
+        // fileName = [NSString stringWithUTF8String:argv[1]];
         NSString *sourceCode = [NSString stringWithContentsOfFile:fileName
                                                          encoding:NSUTF8StringEncoding
                                                             error:NULL];
@@ -74,10 +31,12 @@ int main(int argc, const char * argv[]) {
         NSString *imports = @"import Foundation\nimport AppKit\n";
         sourceCode = [imports stringByAppendingString:sourceCode];
         
-        NSDictionary *result = SwiftCompiler(sourceCode, debug);
+        Compiler *compiler = [[Compiler alloc] initWithSourceCode:sourceCode
+                                                        andPrefix:@"ObjC"];
+        [compiler compile];
         
-        NSString *outputCode = [result objectForKey:@"program"];
-        NSString *error = [result objectForKey:@"error"];
+        NSString *outputCode = [compiler output];
+        NSString *error = [compiler errors];
         
         NSLog(@"Code Output:\n===\n%@",outputCode);
         NSLog(@"Errors:\n===\n%@",error);
