@@ -8,6 +8,7 @@
 
 #import "Compiler.h"
 #import "Lexer.h"
+#import "ASTContext.h"
 #import "AST.h"
 #import "bridge.h"
 
@@ -23,6 +24,8 @@
         prefix = pfx;
         [prefix retain];
         [ASTNode setPrefix:prefix];
+        
+        ctx = [[ASTContext alloc] init];
     }
     return self;
 }

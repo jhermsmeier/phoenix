@@ -19,20 +19,12 @@ int main(int argc, const char * argv[]) {
             return 0;
         }
          */
-        ctx = [[ASTContext alloc] init];
         NSString *fileName = nil;
         // fileName = @"/tmp/webkit.swift";
         fileName = @"/tmp/hello.swift";
         // fileName = [NSString stringWithUTF8String:argv[1]];
-        NSString *sourceCode = [NSString stringWithContentsOfFile:fileName
-                                                         encoding:NSUTF8StringEncoding
-                                                            error:NULL];
-        
-        NSString *imports = @"import Foundation\nimport AppKit\n";
-        sourceCode = [imports stringByAppendingString:sourceCode];
-        
-        Compiler *compiler = [[Compiler alloc] initWithSourceCode:sourceCode
-                                                        andPrefix:@"ObjC"];
+        Compiler *compiler = [[Compiler alloc] initWithContentsOfFile:fileName
+                                                            andPrefix:@"ObjC"];
         [compiler compile];
         
         NSString *outputCode = [compiler output];

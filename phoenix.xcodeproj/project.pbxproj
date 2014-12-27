@@ -80,6 +80,7 @@
 		14BECB8C1A4C8DA000C0522A /* ObjCASTTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECB8B1A4C8DA000C0522A /* ObjCASTTransform.m */; };
 		14BECB901A4C8E0000C0522A /* Compiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECB8F1A4C8E0000C0522A /* Compiler.m */; };
 		14BECB931A4C9BD700C0522A /* ASTTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECB921A4C9BD700C0522A /* ASTTransform.m */; };
+		14BECB961A4DBB3800C0522A /* ObjCMainFunctionDeclaration.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECB951A4DBB3800C0522A /* ObjCMainFunctionDeclaration.m */; };
 		14C83C9E1A29809400A10D94 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C931A29809400A10D94 /* Lexer.m */; };
 		14C83C9F1A29809400A10D94 /* Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C951A29809400A10D94 /* Regex.m */; };
 /* End PBXBuildFile section */
@@ -249,6 +250,8 @@
 		14BECB8F1A4C8E0000C0522A /* Compiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compiler.m; sourceTree = "<group>"; };
 		14BECB911A4C9BD700C0522A /* ASTTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTransform.h; sourceTree = "<group>"; };
 		14BECB921A4C9BD700C0522A /* ASTTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTransform.m; sourceTree = "<group>"; };
+		14BECB941A4DBB3800C0522A /* ObjCMainFunctionDeclaration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCMainFunctionDeclaration.h; sourceTree = "<group>"; };
+		14BECB951A4DBB3800C0522A /* ObjCMainFunctionDeclaration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCMainFunctionDeclaration.m; sourceTree = "<group>"; };
 		14C83C861A29809400A10D94 /* AST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AST.h; sourceTree = "<group>"; };
 		14C83C921A29809400A10D94 /* Lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexer.h; sourceTree = "<group>"; };
 		14C83C931A29809400A10D94 /* Lexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lexer.m; sourceTree = "<group>"; };
@@ -350,6 +353,8 @@
 				143C35271A38A52F004DBA61 /* ObjCVariableDeclaration.m */,
 				143C35281A38A52F004DBA61 /* ObjCWhileStatement.h */,
 				143C35291A38A52F004DBA61 /* ObjCWhileStatement.m */,
+				14BECB941A4DBB3800C0522A /* ObjCMainFunctionDeclaration.h */,
+				14BECB951A4DBB3800C0522A /* ObjCMainFunctionDeclaration.m */,
 			);
 			path = ObjC;
 			sourceTree = "<group>";
@@ -623,6 +628,7 @@
 				143C34D61A343DCA004DBA61 /* DictionaryType.m in Sources */,
 				143C353F1A38A52F004DBA61 /* ObjCPostfixOperator.m in Sources */,
 				143C34D71A343DCA004DBA61 /* FunctionType.m in Sources */,
+				14BECB961A4DBB3800C0522A /* ObjCMainFunctionDeclaration.m in Sources */,
 				143C35421A38A52F004DBA61 /* ObjCStatementNode.m in Sources */,
 				143C34C21A34051C004DBA61 /* StatementsNode.m in Sources */,
 				143C34EC1A3852E6004DBA61 /* NSString+Extension.m in Sources */,

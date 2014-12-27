@@ -2,6 +2,7 @@
 #import "ASTContext.h"
 
 @implementation ObjCStatementsNode
+
 - (NSString *)toCode
 {
     if (self.firstStatement)
@@ -39,4 +40,5 @@
     
     return result;
 }
+
 @end
