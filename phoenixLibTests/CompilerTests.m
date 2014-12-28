@@ -26,7 +26,7 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testBasicTranslation {
     NSString* source = @"print(\"test\")";
     Compiler* compiler = [[Compiler alloc] initWithSourceCode:source
                                                         andPrefix:@"ObjC"];
@@ -34,9 +34,9 @@
     [compiler compile];
     NSString *outputCode = [compiler output];
     NSString *errors = [compiler errors];
-    NSString *outp = @"print(\"test\");";
+
     XCTAssert(errors == nil);
-    XCTAssert([outp isEqualToString:outputCode]);
+    XCTAssertEqualObjects(outputCode, @"print(\"test\");\n");
 }
 
 @end
