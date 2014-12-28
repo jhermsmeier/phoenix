@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>029F5572-17B8-4FF6-ADCE-A6D300DF862B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>phoenix</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88E8B15857175569F40B9F2C212F20431FB66148</key>
+		<string>source.ind.ie:project/phoenix.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>phoenix.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88E8B15857175569F40B9F2C212F20431FB66148</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>source.ind.ie:project/phoenix.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88E8B15857175569F40B9F2C212F20431FB66148</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88E8B15857175569F40B9F2C212F20431FB66148</string>
+			<key>IDESourceControlWCCName</key>
+			<string>phoenix</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "phoenixLibTests/CompilerTests.m"
+            timestampString = "441493764.463216"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-testExample"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CompilerTests testExample]"
+                  moduleName = "phoenixLibTests"
+                  urlString = "file:///Users/krzysztofkaczor/Workspace/phoenix/phoenixLibTests/CompilerTests.m"
+                  timestampString = "441493956.332151"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CompilerTests testExample]"
+                  moduleName = "phoenixLibTests"
+                  urlString = "file:///Users/krzysztofkaczor/Workspace/phoenix/phoenixLibTests/CompilerTests.m"
+                  timestampString = "441493956.332343"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "475">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CompilerTests testExample]"
+                  moduleName = "phoenixLibTests"
+                  urlString = "file:///Users/krzysztofkaczor/Workspace/phoenix/phoenixLibTests/CompilerTests.m"
+                  timestampString = "441493956.332562"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "498">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CompilerTests testExample]"
+                  moduleName = "phoenixLibTests"
+                  urlString = "file:///Users/krzysztofkaczor/Workspace/phoenix/phoenixLibTests/CompilerTests.m"
+                  timestampString = "441493956.332792"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "578">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "phoenixLibTests/CompilerTests.m"
+            timestampString = "441494160.806684"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-testExample"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CompilerTests testExample]"
+                  moduleName = "phoenixLibTests"
+                  urlString = "file:///Users/krzysztofkaczor/Workspace/phoenix/phoenixLibTests/CompilerTests.m"
+                  timestampString = "441494400.80164"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "518">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CompilerTests testExample]"
+                  moduleName = "phoenixLibTests"
+                  urlString = "file:///Users/krzysztofkaczor/Workspace/phoenix/phoenixLibTests/CompilerTests.m"
+                  timestampString = "441494400.801825"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1588">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CompilerTests testExample]"
+                  moduleName = "phoenixLibTests"
+                  urlString = "file:///Users/krzysztofkaczor/Workspace/phoenix/phoenixLibTests/CompilerTests.m"
+                  timestampString = "441494400.802077"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1612">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CompilerTests testExample]"
+                  moduleName = "phoenixLibTests"
+                  urlString = "file:///Users/krzysztofkaczor/Workspace/phoenix/phoenixLibTests/CompilerTests.m"
+                  timestampString = "441494400.802205"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1695">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
