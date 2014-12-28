@@ -214,7 +214,7 @@
 		6B8A823F1A509F7A006A1AB7 /* GRAMMAR.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GRAMMAR.md; sourceTree = "<group>"; };
 		6B8A82401A509F7A006A1AB7 /* grammar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = grammar.mm; sourceTree = "<group>"; };
 		6B8A82411A509F7A006A1AB7 /* grammar.y */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; path = grammar.y; sourceTree = "<group>"; };
-		6B8A82421A509F7A006A1AB7 /* swift.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swift.grammar; sourceTree = "<group>"; };
+		6B8A82421A509F7A006A1AB7 /* swift.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.grammar; path = swift.grammar; sourceTree = "<group>"; };
 		6B8A82441A509F7A006A1AB7 /* ArrayType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayType.h; sourceTree = "<group>"; };
 		6B8A82451A509F7A006A1AB7 /* ArrayType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayType.m; sourceTree = "<group>"; };
 		6B8A82461A509F7A006A1AB7 /* DictionaryType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryType.h; sourceTree = "<group>"; };
@@ -395,8 +395,8 @@
 			isa = PBXGroup;
 			children = (
 				1460D5881A017757009D1EE9 /* phoenix */,
-				6B8A821E1A509E4E006A1AB7 /* phoenixLib */,
-				6B8A822B1A509E4E006A1AB7 /* phoenixLibTests */,
+				6B8A821E1A509E4E006A1AB7 /* PhoenixLib */,
+				6B8A822B1A509E4E006A1AB7 /* PhoenixLibTests */,
 				1460D5871A017757009D1EE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 			path = phoenix;
 			sourceTree = "<group>";
 		};
-		6B8A821E1A509E4E006A1AB7 /* phoenixLib */ = {
+		6B8A821E1A509E4E006A1AB7 /* PhoenixLib */ = {
 			isa = PBXGroup;
 			children = (
 				6B8A82341A509F7A006A1AB7 /* Compiler */,
@@ -433,15 +433,16 @@
 				6B8A821F1A509E4E006A1AB7 /* phoenixLib.h */,
 				6B8A82211A509E4E006A1AB7 /* phoenixLib.m */,
 			);
-			path = phoenixLib;
+			path = PhoenixLib;
 			sourceTree = "<group>";
 		};
-		6B8A822B1A509E4E006A1AB7 /* phoenixLibTests */ = {
+		6B8A822B1A509E4E006A1AB7 /* PhoenixLibTests */ = {
 			isa = PBXGroup;
 			children = (
 				6B8A822C1A509E4E006A1AB7 /* Supporting Files */,
 				6B8A83811A50A1F4006A1AB7 /* CompilerTests.m */,
 			);
+			name = PhoenixLibTests;
 			path = phoenixLibTests;
 			sourceTree = "<group>";
 		};
