@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1460D58A1A017757009D1EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460D5891A017757009D1EE9 /* main.m */; };
-		6B8A82201A509E4E006A1AB7 /* phoenixLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8A821F1A509E4E006A1AB7 /* phoenixLib.h */; };
-		6B8A82221A509E4E006A1AB7 /* phoenixLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A82211A509E4E006A1AB7 /* phoenixLib.m */; };
 		6B8A82281A509E4E006A1AB7 /* libphoenixLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8A821D1A509E4E006A1AB7 /* libphoenixLib.a */; };
 		6B8A82DD1A509F7A006A1AB7 /* Compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8A82351A509F7A006A1AB7 /* Compiler.h */; };
 		6B8A82DE1A509F7A006A1AB7 /* Compiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A82361A509F7A006A1AB7 /* Compiler.m */; };
@@ -200,8 +198,6 @@
 		1460D5861A017757009D1EE9 /* phoenix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = phoenix; sourceTree = BUILT_PRODUCTS_DIR; };
 		1460D5891A017757009D1EE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B8A821D1A509E4E006A1AB7 /* libphoenixLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libphoenixLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B8A821F1A509E4E006A1AB7 /* phoenixLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phoenixLib.h; sourceTree = "<group>"; };
-		6B8A82211A509E4E006A1AB7 /* phoenixLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phoenixLib.m; sourceTree = "<group>"; };
 		6B8A82271A509E4E006A1AB7 /* phoenixLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phoenixLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8A822D1A509E4E006A1AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B8A82351A509F7A006A1AB7 /* Compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compiler.h; sourceTree = "<group>"; };
@@ -430,8 +426,6 @@
 				6B8A82931A509F7A006A1AB7 /* CodeGenerator */,
 				6B8A82D51A509F7A006A1AB7 /* Lexer */,
 				6B8A82DA1A509F7A006A1AB7 /* Utils */,
-				6B8A821F1A509E4E006A1AB7 /* phoenixLib.h */,
-				6B8A82211A509E4E006A1AB7 /* phoenixLib.m */,
 			);
 			path = PhoenixLib;
 			sourceTree = "<group>";
@@ -712,7 +706,6 @@
 				6B8A83031A509F7A006A1AB7 /* DeclarationStatement.h in Headers */,
 				6B8A82E71A509F7A006A1AB7 /* ArrayType.h in Headers */,
 				6B8A83111A509F7A006A1AB7 /* Functions.h in Headers */,
-				6B8A82201A509E4E006A1AB7 /* phoenixLib.h in Headers */,
 				6B8A83071A509F7A006A1AB7 /* DictionaryLiteral.h in Headers */,
 				6B8A82E31A509F7A006A1AB7 /* bridge.h in Headers */,
 				6B8A83691A509F7A006A1AB7 /* ObjCStatementsNode.h in Headers */,
@@ -939,7 +932,6 @@
 				6B8A82FA1A509F7A006A1AB7 /* ASTContext.m in Sources */,
 				6B8A83701A509F7A006A1AB7 /* ObjCVariableDeclaration.m in Sources */,
 				6B8A82FC1A509F7A006A1AB7 /* ASTNode.m in Sources */,
-				6B8A82221A509E4E006A1AB7 /* phoenixLib.m in Sources */,
 				6B8A832C1A509F7A006A1AB7 /* StatementsNode.m in Sources */,
 				6B8A82E01A509F7A006A1AB7 /* ASTTransform.m in Sources */,
 				6B8A83521A509F7A006A1AB7 /* ObjCIfStatement.m in Sources */,
