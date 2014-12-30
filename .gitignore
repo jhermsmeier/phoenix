@@ -1,3 +1,9 @@
 build
 phoenix.xcodeproj/project.xcworkspace/xcuserdata
 phoenix.xcodeproj/project.xcworkspace/xcuserdata/*
+.DS_Store
+*.swp
+*~.nib
+*.pbxuser
+*.perspective
+*.perspectivev3
